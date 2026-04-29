@@ -6,8 +6,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.v1.router import api_router
 from app.db.base import Base
 from app.db.session import engine
-from app.models import todo as todo_model  # noqa: F401
-from app.models import user as user_model  # noqa: F401
+from app.models import todo as todo_model
+from app.models import user as user_model
 
 
 @asynccontextmanager
